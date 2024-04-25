@@ -1,0 +1,7 @@
+test-suites:
+  captain-examples-cucumber-js:
+    command: npx cucumber-js --format json:tmp/cucumber.json --format summary --retry 1 --retry-tag-filter @flaky
+    results:
+      language: JavaScript
+      framework: Cucumber
+      path: tmp/cucumber.json
